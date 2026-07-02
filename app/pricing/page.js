@@ -1,0 +1,15 @@
+import PageShell from '../../components/PageShell';
+
+export const metadata = {
+  title: 'Pricing',
+  description: 'Indicative pricing for assurance reviews, contractor tooling, and escrow governance.',
+};
+
+export default function PricingPage() {
+  return (
+    <PageShell current="/pricing" compactFooter footerLeft="Pricing page" footerRight="Charge for assurance, control, and verified release">
+      <section className="hero simple"><div className="container"><div className="eyebrow">Indicative Pricing</div><h1>Price the governance layer clearly.</h1><p className="section-subtitle">DzeNhare should monetize trust, solvency, verification, and transaction control — not just generic software access.</p></div></section>
+      <section className="section"><div className="container grid-3"><div className="audience-card"><div className="topline">For Clients</div><h3>Assurance Review</h3><p>Project screening, feasibility, and early risk diagnosis before design or mobilization.</p><div className="score">From $50</div><div className="proof-visual" style={{ minHeight:120, margin:'4px 0 0' }}><svg viewBox="0 0 280 58" width="100%" height="58"><rect x="0" y="12" width="82" height="34" rx="12" fill="rgba(124,174,255,0.16)"/><rect x="98" y="12" width="82" height="34" rx="12" fill="rgba(241,178,74,0.16)"/><rect x="196" y="12" width="82" height="34" rx="12" fill="rgba(36,195,138,0.16)"/></svg></div><ul className="why-list"><li>Red Pen / feasibility review</li><li>Go / No-Go logic</li><li>Project-killer detection</li></ul></div><div className="audience-card"><div className="topline">For Contractors</div><h3>Contractor OS</h3><p>Freemium-to-paid structure for P4P, cash monitoring, and network credibility.</p><div className="score">$20–$50/mo</div><div className="proof-visual" style={{ minHeight:120, margin:'4px 0 0' }}><svg viewBox="0 0 280 58" width="100%" height="58"><rect x="0" y="16" width="280" height="12" rx="6" fill="rgba(255,255,255,0.06)"/><rect x="0" y="16" width="198" height="12" rx="6" fill="rgba(36,195,138,0.55)"/><path d="M26 46h110" stroke="rgba(124,174,255,0.35)" strokeWidth="6" strokeLinecap="round"/></svg></div><ul className="why-list"><li>P4P and solvency tools</li><li>Green Flag progression</li><li>Higher-trust opportunity access</li></ul></div><div className="audience-card"><div className="topline">For Active Projects</div><h3>Escrow & Release Layer</h3><p>Managed transaction governance for milestone verification and capital release.</p><div className="score">Take Rate</div><div className="proof-visual" style={{ minHeight:120, margin:'4px 0 0' }}><svg viewBox="0 0 280 58" width="100%" height="58"><circle cx="40" cy="29" r="16" fill="rgba(124,174,255,0.18)"/><circle cx="140" cy="29" r="16" fill="rgba(241,178,74,0.18)"/><circle cx="240" cy="29" r="16" fill="rgba(36,195,138,0.18)"/><path d="M56 29h68M156 29h68" stroke="rgba(255,255,255,0.22)" strokeWidth="2.5" strokeLinecap="round"/></svg></div><ul className="why-list"><li>Escrow transaction fee</li><li>Verification workflow</li><li>Release control and audit trail</li></ul></div></div></section>
+    </PageShell>
+  );
+}
